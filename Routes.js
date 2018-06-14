@@ -11,6 +11,11 @@ var MaterialRouter = require('./Materials/Materials.Router');
 var UserRouter=require('./Users/User.router');
 var PatientRouter=require('./Patients/Patient.router');
 
+//hima
+var treatmentRoute=require('./Treatments/Treatment.route');
+var drugRoute=require('./Drugs/Drug.route');
+
+
 
 
 Routes.use('/Machines/',machineRouter);
@@ -23,7 +28,7 @@ Routes.use('/UserDetails/',UserRouter);
 Routes.use('/PatientDetails/',PatientRouter);
 
 //hima
-routes.use('/List/',emergencyRoute);
+
 routes.use('/Treatments/',treatmentRoute);
 routes.use('/Drugs/',drugRoute);
 
