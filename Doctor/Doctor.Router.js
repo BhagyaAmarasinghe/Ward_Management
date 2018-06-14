@@ -18,8 +18,8 @@ router.get('/', (req, res) => {
     })
 });
 
-router.get('/:id', (req, res) => {
-    Controller.getSingle(req.params.id).then(response => {
+router.get('/:d_id', (req, res) => {
+    Controller.getSingle(req.params.d_id).then(response => {
         res.status(response.status).send(response);
     }).catch(err => {
         res.status(err.status).send(err.message);

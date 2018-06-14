@@ -41,9 +41,9 @@ var DoctorController = function () {
     })
     }
 
-    this.getSingle = function(id) {
+    this.getSingle = function(d_id) {
         return new Promise((resolve, reject) => {
-            doctorSchema.find({_id: id}).exec().then(data => {
+            doctorSchema.find({d_id: d_id}).exec().then(data => {
             resolve({'status': 200, 'message':'get single data', 'data': data});
     }).catch(err => {
             reject({'status': 404, 'message':'err:-'+err});
@@ -51,9 +51,9 @@ var DoctorController = function () {
     })
     }
 
-    this.update = function(id, updateData) {
+    this.update = function(d_id, updateData) {
         return new Promise((resolve, reject) => {
-            doctorSchema.update({_id: id}, updateData).then(() => {
+            doctorSchema.update({d_id: d_id}, updateData).then(() => {
             resolve({'status': 200, 'message':'update user'});
     }).catch(err => {
             reject({'status': 404, 'message':'err:-'+err});
@@ -61,9 +61,9 @@ var DoctorController = function () {
     })
     }
 
-    this.delete = function(id) {
+    this.delete = function(d_id) {
         return new Promise((resolve, reject) => {
-            doctorSchema.remove({_id: id}).then(() => {
+            doctorSchema.remove({d_id: d_id}).then(() => {
             resolve({'status': 200, 'message':'delete user'});
     }).catch(err => {
             reject({'status': 404, 'message':'err:-'+err});

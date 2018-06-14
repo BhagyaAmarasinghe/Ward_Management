@@ -1,65 +1,97 @@
-var mongoose    = require('../mongoose.config');
-var NurseSchema 	= mongoose.model('Nurse');
-var NurseController = function() {
+var mongoose = require('../DBSchema/SchemaMapper');
+var nurseSchema = mongoose.model('Nurse');
 
-    this.add = function(userInstance) {
-        return new Promise((resolve, reject) => {
-            var nurse = new NurseSchema({
-                name: userInstance.name,
-                nic: userInstance.nic,
-                age: userInstance.age,
-                address: userInstance.address,
-                ward: userInstance.ward,
-                priority_status: userInstance.priority_status
+var NurseController = function () {
+    this.insert = function (data) {
+        return new Promise(function (resolve,reject) {
+            var nurse = new nurseSchema({
+                nur_id:data.nur_id,
+                nur_name:data.nur_name,
+                nur_nic: data.nur_nic,
+                nur_age:data.nur_age,
+                nur_address:data.nur_address,
+                nur_ward:data.nur_ward,
+                nur_priority_status:data.nur_priority_status
+            });
+
+            nurse.save().then(function () {
+                resolve({
+                    status:200,
+                    message:'nurse successfully addedd'
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'nurse could no be added'+reason
+                })
             })
-            nurse.save().then(() => {
-                resolve({'status': 200, 'message':'added new user'});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
+        })
+    };
+
+    this.updateNurse = function (nur_id,data) {
+        return new Promise(function (resolve,reject) {
+            nurseSchema.update({nur_id:nur_id},data).then(function () {
+                resolve({
+                    status:200,
+                    message:'material data successfully updated'
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'material dara update failed'+reason
+                })
+            })
+        })
+    };
+
+    this.getNurses = function () {
+        return new Promise(function (resolve,reject) {
+            nurseSchema.find().exec().then(function (data) {
+                resolve({
+                    status:200,
+                    data:data
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'could not get material data'+reason
+                })
+            })
+        })
+    };
+
+    this.getOneNurse = function (mat_id) {
+        return new Promise(function (resolve,reject) {
+            nurseSchema.find({nur_id:nur_id}).exec().then(function (data) {
+                resolve({
+                    status:200,
+                    data:data
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'could not get the data on '+mat_id + 'the reason :'+reason
+                })
+            })
+        })
+    };
+
+    this.removeNurse = function (nur_id) {
+        return new Promise(function (resolve,reject) {
+            nurseSchema.remove({nur_id:nur_id}).then(function () {
+                resolve({
+                    status:200,
+                    message:'material successfully removed'
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'material could not be removed'+reason
+                })
             })
         })
     }
 
-    this.getAll = function() {
-        return new Promise((resolve, reject) => {
-            NurseSchema.find().exec().then(data => {
-                resolve({'status': 200, 'message':'get all data', 'data': data});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-    this.getSingle = function(id) {
-        return new Promise((resolve, reject) => {
-            NurseSchema.find({_id: id}).exec().then(data => {
-                resolve({'status': 200, 'message':'get single data', 'data': data});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-    this.update = function(id, updateData) {
-        return new Promise((resolve, reject) => {
-            NurseSchema.update({_id: id}, updateData).then(() => {
-                resolve({'status': 200, 'message':'update user'});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-    this.delete = function(id) {
-        return new Promise((resolve, reject) => {
-            NurseSchema.remove({_id: id}).then(() => {
-                resolve({'status': 200, 'message':'delete user'});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-}
+};
 
 module.exports = new NurseController();
