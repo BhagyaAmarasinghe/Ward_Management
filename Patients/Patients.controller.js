@@ -38,9 +38,9 @@ var Patientcontroller=function () {
         })
     }
 
-    this.fetchsingle=function (id) {
+    this.fetchsingle=function (PID) {
         return new Promise(function (resolve,reject) {
-            PatientSchema.find({id: id}).exec().then(function (data) {
+            PatientSchema.find({PID: PID}).exec().then(function (data) {
                 resolve({'status':200,'message':'Item Found','data':data});
             }).catch(function (err) {
                 reject({'status':404,'message':'Item Not found '+err});
