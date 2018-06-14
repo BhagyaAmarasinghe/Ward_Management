@@ -100,6 +100,57 @@ const DoctorSchema = new schema({
      }
  });
 
+const NurseSchema = new Schema({
+    name: {
+        type: String,
+        require: true
+    },
+    nic: {
+        type: String,
+        require: true
+    },
+    age: {
+        type: String,
+        require: true
+    },
+    address: {
+        type: String,
+        require: true
+    },
+    ward: {
+        type: String,
+        require: true
+    },
+    priority_status: {
+        type: String,
+        require: true
+    }
+});
+
+const AttendantSchema = new Schema({
+    name: {
+        type: String,
+        require: true
+    },
+    nic: {
+        type: String,
+        require: true
+    },
+    age: {
+        type: int,
+        require: true
+    },
+    address: {
+        type: String,
+        require: true
+    },
+    ward: {
+        type: String,
+        require: true
+    }
+});
+
+
  mongoose.model('Ward',WardSchema);
  mongoose.model('Doctor',DoctorSchema);
  mongoose.model('Patient',PatientSchema);
