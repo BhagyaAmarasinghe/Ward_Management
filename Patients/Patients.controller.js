@@ -17,7 +17,8 @@ var Patientcontroller=function () {
                 PatientStatus:data.PatientStatus,
                 Treatments:data.Treatments,
                 Tests:data.Tests,
-                Drugs:data.Drugs
+                Drugs:data.Drugs,
+                Date:data.Date
             })
 
             patient.save().then(function () {

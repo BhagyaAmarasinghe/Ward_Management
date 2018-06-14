@@ -65,6 +65,10 @@ const PatientSchema=new Schema({
     Drugs:{
         type:String,
         require:true
+    },
+    Date:{
+        type:Date,
+        require:true
     }
 });
 
@@ -73,7 +77,7 @@ const PatientSchema=new Schema({
 mongoose.model('UserDetails',UserSchema);
 mongoose.model('PatientDetails',PatientSchema);
 
-mongoose.connect('mongodb://127.0.0.1:27017/Users',function (err) {
+mongoose.connect('mongodb://127.0.0.1:27017/WardManagement',function (err) {
     if(err){
         console.log('DB Error');
         process.exit(-1);
