@@ -150,12 +150,80 @@ const AttendantSchema = new Schema({
     }
 });
 
+const drugSchema=new Schema({
+    id:{
+        type:String,
+        require:true
+    },
+    name:{
+        type:String,
+        require:false
+    },
+
+    type:{
+        type:String,
+        require:true
+    },
+    price:{
+        type:String,
+        require:true
+    },
+    prescribed_for:[String]
+});
+
+const treatmentSchema=new Schema({
+    id:{
+        type:String,
+        require:true
+    },
+    condition_name:{
+        type:String,
+        require:false
+    },
+
+    treatment:{
+        type:String,
+        require:true
+    },
+    price:{
+        type:String,
+        require:true
+    }
+});
+
+const emergencyListSchema=new Schema({
+    id:{
+        type:String,
+        require:true
+    },
+    name:{
+        type:String,
+        require:false
+    },
+
+    telephone:{
+        type:String,
+        require:true
+    },
+    speciality:{
+        type:String,
+        require:true
+    },
+    priority_status:{
+        type:String,
+        require:true
+    }
+});
+
 
  mongoose.model('Ward',WardSchema);
  mongoose.model('Doctor',DoctorSchema);
  mongoose.model('Patient',PatientSchema);
  mongoose.model('Machine',MachineSchema);
  mongoose.model('Materials',MaterialSchema);
+ mongoose.model('Drug',drugSchema);
+ mongoose.model('Treatment',treatmentSchema);
+ mongoose.model('EmergencyList',emergencyListSchema);
 
 
  mongoose.connect('mongodb://localhost:27017/WardManagement',function(err){
