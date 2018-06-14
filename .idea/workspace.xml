@@ -3,11 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="7788680b-aa59-420f-802a-7143e4a2bb7f" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/Patients/Patient.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/Patients/Patient.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patients/Patients.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/Patients/Patients.controller.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Attendant/Attendant.Controller.js" afterPath="$PROJECT_DIR$/Attendant/Attendant.Controller.js" />
+      <change beforePath="$PROJECT_DIR$/Attendant/Attendant.Router.js" afterPath="$PROJECT_DIR$/Attendant/Attendant.Router.js" />
+      <change beforePath="$PROJECT_DIR$/Doctor/Doctor.Controller.js" afterPath="$PROJECT_DIR$/Doctor/Doctor.Controller.js" />
+      <change beforePath="$PROJECT_DIR$/Doctor/Doctor.Router.js" afterPath="$PROJECT_DIR$/Doctor/Doctor.Router.js" />
+      <change beforePath="$PROJECT_DIR$/Nurse/Nurse.Controller.js" afterPath="$PROJECT_DIR$/Nurse/Nurse.Controller.js" />
+      <change beforePath="$PROJECT_DIR$/Nurse/Nurse.Router.js" afterPath="$PROJECT_DIR$/Nurse/Nurse.Router.js" />
+      <change beforePath="$PROJECT_DIR$/Routes.js" afterPath="$PROJECT_DIR$/Routes.js" />
+>>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
+=======
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
       <change beforePath="" afterPath="$PROJECT_DIR$/Diagnostics/Diagnostics.controller.js" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Diagnostics/Diagnostics.router.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/DBSchema/SchemaMapper.js" afterPath="$PROJECT_DIR$/DBSchema/SchemaMapper.js" />
       <change beforePath="$PROJECT_DIR$/Routes.js" afterPath="$PROJECT_DIR$/Routes.js" />
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Patients/Patient.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/Patients/Patient.router.js" afterDir="false" />
@@ -22,6 +40,16 @@
       <change beforePath="$PROJECT_DIR$/Routes.js" afterPath="$PROJECT_DIR$/Routes.js" />
 >>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
+=======
+>>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
+=======
+      <change beforePath="" afterPath="$PROJECT_DIR$/Diagnostics/Diagnostics.controller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Diagnostics/Diagnostics.router.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/DBSchema/SchemaMapper.js" afterPath="$PROJECT_DIR$/DBSchema/SchemaMapper.js" />
+      <change beforePath="$PROJECT_DIR$/Routes.js" afterPath="$PROJECT_DIR$/Routes.js" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +64,11 @@
   <component name="FileEditorManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
     <leaf>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
@@ -44,7 +76,12 @@
             <state relative-caret-position="119">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
 =======
+<<<<<<< HEAD
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
+=======
+=======
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="Materials.Router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Materials/Materials.Router.js">
@@ -415,6 +452,7 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Patients/Patients.controller.js" />
 =======
 <<<<<<< HEAD
@@ -423,18 +461,41 @@
         <option value="$PROJECT_DIR$/Patients/Patients.controller.js" />
 >>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Routes.js" />
+=======
+        <option value="$PROJECT_DIR$/Patients/Patients.controller.js" />
+>>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
+=======
+        <option value="$PROJECT_DIR$/Patients/Patients.controller.js" />
+>>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
+=======
+        <option value="$PROJECT_DIR$/Patients/Patients.controller.js" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/Users/User.router.js" />
         <option value="$PROJECT_DIR$/Users/User.controller.js" />
         <option value="$PROJECT_DIR$/DBSchema/DBSchema.js" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
         <option value="$PROJECT_DIR$/Patients/Patients.controller.js" />
         <option value="$PROJECT_DIR$/Drugs/Drug.route.js" />
         <option value="$PROJECT_DIR$/Patients/Patient.router.js" />
 =======
+<<<<<<< HEAD
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
+=======
+=======
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
         <option value="$PROJECT_DIR$/Doctor/Doctor.Controller.js" />
         <option value="$PROJECT_DIR$/Doctor/Doctor.Router.js" />
         <option value="$PROJECT_DIR$/Nurse/Nurse.Controller.js" />
@@ -443,6 +504,12 @@
         <option value="$PROJECT_DIR$/Attendant/Attendant.Router.js" />
         <option value="$PROJECT_DIR$/Routes.js" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
+=======
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
 =======
         <option value="$PROJECT_DIR$/DBSchema/SchemaMapper.js" />
         <option value="$PROJECT_DIR$/Diagnostics/Diagnostics.controller.js" />
@@ -547,16 +614,26 @@
               <item name="Ward_Management" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ward_Management" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+              <item name="Drugs" type="462c0819:PsiDirectoryNode" />
+=======
+=======
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
               <item name="Doctor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ward_Management" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ward_Management" type="462c0819:PsiDirectoryNode" />
               <item name="Drugs" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="Diagnostics" type="462c0819:PsiDirectoryNode" />
+>>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
             </path>
             <path>
               <item name="Ward_Management" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ward_Management" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Materials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -576,8 +653,12 @@
               <item name="Ward_Management" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ward_Management" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+              <item name="Patients" type="462c0819:PsiDirectoryNode" />
+=======
+<<<<<<< HEAD
               <item name="Users" type="462c0819:PsiDirectoryNode" />
 >>>>>>> c53c927f8fdbbf68954c9fe8c75c84c1b6825bee
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
 =======
               <item name="Machine" type="462c0819:PsiDirectoryNode" />
 >>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
@@ -666,7 +747,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <option name="totallyTimeSpent" value="8071000" />
+=======
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
     <option name="totallyTimeSpent" value="6058000" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
 =======
     <option name="totallyTimeSpent" value="11674000" />
 >>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
@@ -676,7 +763,11 @@
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+=======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+<<<<<<< HEAD
 =======
     <option name="totallyTimeSpent" value="8071000" />
   </component>
@@ -685,6 +776,9 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
+=======
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -769,7 +863,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
+=======
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
 >>>>>>> c53c927f8fdbbf68954c9fe8c75c84c1b6825bee
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
 =======
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2731377" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -853,7 +953,13 @@
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
+=======
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
 >>>>>>> c53c927f8fdbbf68954c9fe8c75c84c1b6825bee
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
 =======
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
 >>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
@@ -1090,6 +1196,9 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Doctor/Doctor.Controller.js">
+=======
+<<<<<<< HEAD
 =======
 >>>>>>> c53c927f8fdbbf68954c9fe8c75c84c1b6825bee
 =======
@@ -1111,6 +1220,7 @@
 =======
     <entry file="file://$PROJECT_DIR$/Doctor/Doctor.Controller.js">
 >>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="421">
@@ -1126,8 +1236,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
+=======
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
     <entry file="file://$PROJECT_DIR$/package.json">
 <<<<<<< HEAD
 =======
@@ -1142,6 +1255,7 @@
     </entry>
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Users/User.router.js">
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
 =======
 >>>>>>> c53c927f8fdbbf68954c9fe8c75c84c1b6825bee
 =======
@@ -1159,6 +1273,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Patients/Patients.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+>>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
+    <entry file="file://$PROJECT_DIR$/package.json">
+=======
+    <entry file="file://$PROJECT_DIR$/Users/User.router.js">
+>>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/DBSchema/DBSchema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-998">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Users/User.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+=======
+    <entry file="file://$PROJECT_DIR$/Patients/Patient.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Patients/Patients.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1185,6 +1342,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
+=======
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
@@ -1276,8 +1437,28 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <state relative-caret-position="-584">
+          <caret line="155" column="6" lean-forward="true" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="6" />
+=======
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
         <state relative-caret-position="-1445">
           <caret line="77" column="15" lean-forward="true" selection-start-line="77" selection-start-column="15" selection-end-line="77" selection-end-column="15" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+=======
+        <state relative-caret-position="264">
+          <caret line="231" column="6" lean-forward="true" selection-start-line="231" selection-start-column="6" selection-end-line="231" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine/Machine.Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="462">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
 =======
         <state relative-caret-position="264">
           <caret line="231" column="6" lean-forward="true" selection-start-line="231" selection-start-column="6" selection-end-line="231" selection-end-column="6" />
@@ -1303,6 +1484,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="46" column="3" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="46" selection-end-column="3" />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> f590500e6471568527711b60db8ab5d74ee7878e
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine/Machine.Router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="46" column="3" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="46" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
           <folding />
 =======
     <entry file="file://$PROJECT_DIR$/Treatments/Treatment.route.js">
@@ -1314,15 +1516,28 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Doctor/Doctor.Controller.js">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Routes.js">
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="364">
           <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
 =======
+<<<<<<< HEAD
         <state relative-caret-position="303">
           <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
+=======
+    <entry file="file://$PROJECT_DIR$/Diagnostics/Diagnostics.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
           <folding />
         </state>
       </provider>
@@ -1406,9 +1621,16 @@
 >>>>>>> f3cec66f55405a97bcd0b6b24d146e5244a34e3d
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+        <state relative-caret-position="476">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+=======
+    <entry file="file://$PROJECT_DIR$/Diagnostics/Diagnostics.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="187">
 <<<<<<< HEAD
           <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
 =======
         <state relative-caret-position="429">
           <caret line="160" column="3" lean-forward="false" selection-start-line="160" selection-start-column="3" selection-end-line="160" selection-end-column="3" />
@@ -1477,7 +1699,13 @@
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="48" />
           <folding />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7997ccb664bca2e4a511953b9d264538f145d587
+=======
+>>>>>>> 438eb511bc6ef16935f1014db3abefe275465dc3
 >>>>>>> c53c927f8fdbbf68954c9fe8c75c84c1b6825bee
+>>>>>>> 6bd51fbccbca611323896c83c8fdc0f9883f4e8a
 =======
         <state relative-caret-position="2078">
           <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
