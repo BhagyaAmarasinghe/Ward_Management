@@ -9,12 +9,12 @@ Controller = function () {
 
     this.createList=function(data) {
         return new Promise(function (resolve, reject) {
-            console.log(data.d_id);
+            //console.log(data.d_specialty);
             var listItem = new listSchema({
                 d_id: data.d_id,
-                d_name: data.name,
+                d_name: data.d_name,
                 d_telephone: data.d_telephone,
-                d_speciality: data.d_speciality,
+                d_specialty: data.d_specialty,
                 d_ps: data.d_ps
             });
             listItem.save().then(function () {

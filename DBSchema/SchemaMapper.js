@@ -174,7 +174,7 @@ const emergencyListSchema=new schema({
         type:String,
         require:true
     },
-    d_speciality:{
+    d_specialty:{
         type:String,
         require:true
     },
