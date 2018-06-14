@@ -22,5 +22,9 @@ Routes.use('/Materials/',MaterialRouter);
 Routes.use('/UserDetails/',UserRouter);
 Routes.use('/PatientDetails/',PatientRouter);
 
+//hima
+routes.use('/List/',emergencyRoute);
+routes.use('/Treatments/',treatmentRoute);
+routes.use('/Drugs/',drugRoute);
 
 module.exports = Routes;
