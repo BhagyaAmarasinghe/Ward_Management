@@ -19,10 +19,14 @@ var emergencyRoute=require('./EmergencyList/Emergency.route');
 var drugRoute=require('./Drugs/Drug.route');
 var treatmentRoute=require('./Treatments/Treatment.route');
 
+//shihan
+var diagnosisRoute = require('./Diagnostics/Diagnostics.router');
+
 Routes.use('/Machines/',machineRouter);
 Routes.use('/Patients/',patientRouter);
 Routes.use('/Doctors/',DoctorRouter);
 Routes.use('/Materials/',MaterialRouter);
+Routes.use('/Diagnosis/',diagnosisRoute);
 
 Routes.use('/Nurse/', NurseRouter);
 Routes.use('/Attendant/', AttendantRouter);

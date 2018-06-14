@@ -225,6 +225,30 @@ const treatmentSchema=new schema({
     }
 });
 
+const diagnosticSchema = new schema({
+    diag_id:{
+      type:String,
+      required:true
+    },
+    p_id:{
+        type:String,
+        required:true
+    },
+    d_id:{
+        type:String,
+        required:true
+    },
+    diagnostic:{
+        type:String,
+        required:true
+    },
+    treatment:{
+        type:String,
+        required:true
+    }
+
+});
+
 
  mongoose.model('Ward',WardSchema);
  mongoose.model('Doctor',DoctorSchema);
@@ -234,8 +258,9 @@ const treatmentSchema=new schema({
  mongoose.model('Nurse', NurseSchema);
  mongoose.model('Attendant', AttendantSchema);
  mongoose.model('EmergencyList',emergencyListSchema);
-mongoose.model('Drug',drugSchema);
-mongoose.model('Treatment',treatmentSchema);
+ mongoose.model('Drug',drugSchema);
+ mongoose.model('Treatment',treatmentSchema);
+ mongoose.model('Diagnostic',diagnosticSchema);
 
 
  mongoose.connect('mongodb://localhost:27017/WardManagement',function(err){
