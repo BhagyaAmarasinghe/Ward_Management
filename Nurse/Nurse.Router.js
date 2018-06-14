@@ -1,45 +1,52 @@
-var express     = require('express');
-var router      = express.Router();
-var controller	= require('./nurse.controller');
+var express = require('express');
+var router = express.Router();
+var Controller = require('./Nurse.Controller');
 
-router.post('/', (req, res) => {
-    controller.add(req.body).then(response => {
-        res.status(response.status).send(response.message);
-    }).catch(err => {
-        res.status(err.status).send(err.message);
+router.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods","*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+router.post('/',function (req,res) {
+    Controller.insert(req.body).then(function (data) {
+        res.status(data.status).send({message:data.message});
+    }).catch(function (reason) {
+        res.status(reason.status).send({message:reason.message})
     })
 });
 
-router.get('/', (req, res) => {
-    controller.getAll().then(response => {
-        res.status(response.status).send(response);
-    }).catch(err => {
-        res.status(err.status).send(err.message);
+router.put('/:nur_id',function (req,res) {
+    Controller.updateNurse(req.params.nur_id,req.body).then(function (data) {
+        res.status(data.status).send({message:data.message})
+    }).catch(function (reason) {
+        res.status(reason.status).send({message:reason.message})
     })
 });
 
-router.get('/:id', (req, res) => {
-    controller.getSingle(req.params.id).then(response => {
-        res.status(response.status).send(response);
-    }).catch(err => {
-        res.status(err.status).send(err.message);
+router.get('/',function (req,res) {
+    Controller.getNurses().then(function (data) {
+        res.status(data.status).send({data:data.data})
+    }).catch(function (reason) {
+        res.status(reason.status).send({message:reason.message})
     })
 });
 
-router.put('/:id', (req, res) => {
-    controller.update(req.params.id, req.body).then(response => {
-        res.status(response.status).send(response);
-    }).catch(err => {
-        res.status(err.status).send(err.message);
+router.get('/:nur_id',function (req,res) {
+    Controller.getOneNurse(req.params.nur_id).then(function (data) {
+        res.status(data.status).send({data:data.data})
+    }).catch(function (reason) {
+        res.status(reason.status).send({message:reason.message})
     })
 });
 
-router.delete('/:id', (req, res) => {
-    controller.delete(req.params.id).then(response => {
-        res.status(response.status).send(response);
-    }).catch(err => {
-        res.status(err.status).send(err.message);
+router.delete('/:nur_id',function (req,res) {
+    Controller.removeNurse(req.params.nur_id).then(function (data) {
+        res.status(data.status).send({message:data.message})
+    }).catch(function (reason) {
+        res.status(reason.status).send({message:reason.message})
     })
-})
+});
 
 module.exports = router;

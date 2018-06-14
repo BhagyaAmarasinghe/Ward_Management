@@ -1,64 +1,96 @@
-var mongoose    = require('../mongoose.config');
-var AttendantSchema 	= mongoose.model('Attendant');
-var AttendantController = function() {
+var mongoose = require('../DBSchema/SchemaMapper');
+var attendantSchema = mongoose.model('Attendant');
 
-    this.add = function(userInstance) {
-        return new Promise((resolve, reject) => {
-            var attendant = new AttendantSchema({
-                name: userInstance.name,
-                nic: userInstance.nic,
-                age: userInstance.age,
-                address: userInstance.address,
-                ward: userInstance.ward,
+var AttendantController = function () {
+    this.insert = function (data) {
+        return new Promise(function (resolve,reject) {
+            var attendant = new attendantSchema({
+                att_id:data.att_id,
+                att_name:data.att_name,
+                att_nic: data.att_nic,
+                att_age:data.att_age,
+                att_address:data.att_address,
+                att_ward:data.att_ward
+            });
+
+            attendant.save().then(function () {
+                resolve({
+                    status:200,
+                    message:'attendant successfully addedd'
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'attendant could no be added'+reason
+                })
             })
-            attendant.save().then(() => {
-                resolve({'status': 200, 'message':'added new user'});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
+        })
+    };
+
+    this.updateAttendant = function (att_id,data) {
+        return new Promise(function (resolve,reject) {
+            attendantSchema.update({att_id:att_id},data).then(function () {
+                resolve({
+                    status:200,
+                    message:'material data successfully updated'
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'material dara update failed'+reason
+                })
+            })
+        })
+    };
+
+    this.getAttendants = function () {
+        return new Promise(function (resolve,reject) {
+            attendantSchema.find().exec().then(function (data) {
+                resolve({
+                    status:200,
+                    data:data
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'could not get attendant data'+reason
+                })
+            })
+        })
+    };
+
+    this.getOneAttendant = function (att_id) {
+        return new Promise(function (resolve,reject) {
+            attendantSchema.find({att_id:att_id}).exec().then(function (data) {
+                resolve({
+                    status:200,
+                    data:data
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'could not get the data on '+att_id + 'the reason :'+reason
+                })
+            })
+        })
+    };
+
+    this.removeAttendant = function (att_id) {
+        return new Promise(function (resolve,reject) {
+            attendantSchema.remove({att_id:att_id}).then(function () {
+                resolve({
+                    status:200,
+                    message:'material successfully removed'
+                })
+            }).catch(function (reason) {
+                reject({
+                    status:500,
+                    message:'material could not be removed'+reason
+                })
             })
         })
     }
 
-    this.getAll = function() {
-        return new Promise((resolve, reject) => {
-            AttendantSchema.find().exec().then(data => {
-                resolve({'status': 200, 'message':'get all data', 'data': data});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-    this.getSingle = function(id) {
-        return new Promise((resolve, reject) => {
-            AttendantSchema.find({_id: id}).exec().then(data => {
-                resolve({'status': 200, 'message':'get single data', 'data': data});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-    this.update = function(id, updateData) {
-        return new Promise((resolve, reject) => {
-            AttendantSchema.update({_id: id}, updateData).then(() => {
-                resolve({'status': 200, 'message':'update user'});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-    this.delete = function(id) {
-        return new Promise((resolve, reject) => {
-            AttendantSchema.remove({_id: id}).then(() => {
-                resolve({'status': 200, 'message':'delete user'});
-            }).catch(err => {
-                reject({'status': 404, 'message':'err:-'+err});
-            })
-        })
-    }
-
-}
+};
 
 module.exports = new AttendantController();
