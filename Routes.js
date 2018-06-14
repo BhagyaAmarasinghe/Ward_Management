@@ -15,7 +15,9 @@ var AttendantRouter = require('./Attendant/Attendant.Router');
 var UserRouter=require('./Users/User.router');
 var PatientRouter=require('./Patients/Patient.router');
 
-
+var emergencyRoute=require('./EmergencyList/Emergency.route');
+var drugRoute=require('./Drugs/Drug.route');
+var treatmentRoute=require('./Treatments/Treatment.route');
 
 Routes.use('/Machines/',machineRouter);
 Routes.use('/Patients/',patientRouter);
@@ -30,6 +32,10 @@ Routes.use('/Attendant/', AttendantRouter);
 //sachitha
 Routes.use('/UserDetails/',UserRouter);
 Routes.use('/PatientDetails/',PatientRouter);
+
+Routes.use('/List/',emergencyRoute);
+Routes.use('/Treatments/',treatmentRoute);
+Routes.use('/Drugs/',drugRoute);
 
 
 module.exports = Routes;
