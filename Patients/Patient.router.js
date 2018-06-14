@@ -20,8 +20,8 @@ router.post('/',function (req,res) {
     })
 });
 
-router.put('/:id',function (req,res) {
-    controller.edit(req.params.id,req.body).then(function (response) {
+router.put('/:PID',function (req,res) {
+    controller.edit(req.params.PID,req.body).then(function (response) {
         res.status(response.status).send(response);
     }).catch(function (err) {
         res.status(err.status).send(err.message);

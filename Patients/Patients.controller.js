@@ -48,9 +48,9 @@ var Patientcontroller=function () {
         })
     }
 
-    this.edit=function (id,newdata) {
+    this.edit=function (PID,newdata) {
         return new Promise(function (resolve,reject) {
-            PatientSchema.update({id:id},newdata).then(function () {
+            PatientSchema.update({PID:PID},newdata).then(function () {
                 resolve({'status':200,'message':'Updated'});
             }).catch(function (err) {
                 reject({'status':500,'message':'Error Updating'+err});
