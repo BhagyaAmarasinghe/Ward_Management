@@ -37,8 +37,8 @@ router.get('/',function (req,res) {
     })
 });
 
-router.get('/:id',function (req,res) {
-    controller.fetchsingle(req.body).then(function (response) {
+router.get('/:PID',function (req,res) {
+    controller.fetchsingle(req.params.PID).then(function (response) {
         res.status(response.status).send(response);
     }).catch(function (err) {
         res.status(err.status).send(err.message);
