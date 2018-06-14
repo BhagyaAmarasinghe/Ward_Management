@@ -68,7 +68,7 @@ const PatientSchema=new Schema({
     }
 });
 
-mongoose.model('UserDetalis',UserSchema);
+mongoose.model('UserDetails',UserSchema);
 mongoose.model('PatientDetails',PatientSchema);
 
 mongoose.connect('mongodb://127.0.0.1:27017/Users',function (err) {

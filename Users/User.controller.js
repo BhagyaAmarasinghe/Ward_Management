@@ -1,5 +1,5 @@
 var mongoose=require('../DBSchema/DBSchema');
-var UserSchema=mongoose.model('UserDetalis');
+var UserSchema=mongoose.model('UserDetails');
 
 var Usercontroller=function () {
     this.add=function (data) {
