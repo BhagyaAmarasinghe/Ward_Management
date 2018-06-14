@@ -26,14 +26,6 @@ router.put('/:id',function (req,res) {
     })
 });
 
-router.get('/',function (req,res) {
-    controller.fetchcall().then(function (response) {
-        res.status(response.status).send(response);
-    }).catch(function (err) {
-        res.status(err.status).send(err.message);
-    })
-});
-
 
 router.get('/loginuser/:UserName',function (req,res) {
     controller.fetchsingle(req.params.UserName).then(function (response) {
