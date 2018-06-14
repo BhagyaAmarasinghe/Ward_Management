@@ -101,50 +101,60 @@ const DoctorSchema = new schema({
  });
 
 const NurseSchema = new Schema({
-    name: {
+    nur_id: {
         type: String,
         require: true
     },
-    nic: {
+
+    nur_name: {
         type: String,
         require: true
     },
-    age: {
+    nur_nic: {
         type: String,
         require: true
     },
-    address: {
+    nur_age: {
         type: String,
         require: true
     },
-    ward: {
+    nur_address: {
         type: String,
         require: true
     },
-    priority_status: {
+    nur_ward: {
+        type: String,
+        require: true
+    },
+    nur_priority_status: {
         type: String,
         require: true
     }
 });
 
 const AttendantSchema = new Schema({
-    name: {
+    att_id: {
         type: String,
         require: true
     },
-    nic: {
+
+    att_name: {
         type: String,
         require: true
     },
-    age: {
+    att_nic: {
+        type: String,
+        require: true
+    },
+    att_age: {
         type: int,
         require: true
     },
-    address: {
+    att_address: {
         type: String,
         require: true
     },
-    ward: {
+    att_ward: {
         type: String,
         require: true
     }
@@ -156,6 +166,8 @@ const AttendantSchema = new Schema({
  mongoose.model('Patient',PatientSchema);
  mongoose.model('Machine',MachineSchema);
  mongoose.model('Materials',MaterialSchema);
+ mongoose.model('Nurse', NurseSchema);
+ mongoose.model('Attendant', AttendantSchema);
 
 
  mongoose.connect('mongodb://localhost:27017/WardManagement',function(err){
