@@ -30,6 +30,46 @@ var DoctorController = function () {
             })
         })
     };
+
+    this.getAll = function() {
+        return new Promise((resolve, reject) => {
+            doctorSchema.find().exec().then(data => {
+            resolve({'status': 200, 'message':'get all data', 'data': data});
+    }).catch(err => {
+            reject({'status': 404, 'message':'err:-'+err});
+    })
+    })
+    }
+
+    this.getSingle = function(id) {
+        return new Promise((resolve, reject) => {
+            doctorSchema.find({_id: id}).exec().then(data => {
+            resolve({'status': 200, 'message':'get single data', 'data': data});
+    }).catch(err => {
+            reject({'status': 404, 'message':'err:-'+err});
+    })
+    })
+    }
+
+    this.update = function(id, updateData) {
+        return new Promise((resolve, reject) => {
+            doctorSchema.update({_id: id}, updateData).then(() => {
+            resolve({'status': 200, 'message':'update user'});
+    }).catch(err => {
+            reject({'status': 404, 'message':'err:-'+err});
+    })
+    })
+    }
+
+    this.delete = function(id) {
+        return new Promise((resolve, reject) => {
+            doctorSchema.remove({_id: id}).then(() => {
+            resolve({'status': 200, 'message':'delete user'});
+    }).catch(err => {
+            reject({'status': 404, 'message':'err:-'+err});
+    })
+    })
+    }
 };
 
 
