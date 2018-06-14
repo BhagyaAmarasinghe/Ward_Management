@@ -29,7 +29,7 @@ Routes.use('/PatientDetails/',PatientRouter);
 
 //hima
 
-routes.use('/Treatments/',treatmentRoute);
-routes.use('/Drugs/',drugRoute);
+Routes.use('/Treatments/',treatmentRoute);
+Routes.use('/Drugs/',drugRoute);
 
 module.exports = Routes;

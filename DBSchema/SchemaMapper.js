@@ -150,7 +150,7 @@ const AttendantSchema = new schema({
     }
 });
 
-const drugSchema=new Schema({
+const drugSchema=new schema({
     id:{
         type:String,
         require:true
@@ -171,7 +171,7 @@ const drugSchema=new Schema({
     prescribed_for:[String]
 });
 
-const treatmentSchema=new Schema({
+const treatmentSchema=new schema({
     id:{
         type:String,
         require:true
@@ -191,7 +191,7 @@ const treatmentSchema=new Schema({
     }
 });
 
-const emergencyListSchema=new Schema({
+const emergencyListSchema=new schema({
     id:{
         type:String,
         require:true
