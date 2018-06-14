@@ -160,6 +160,95 @@ const AttendantSchema = new schema({
     }
 });
 
+const emergencyListSchema=new schema({
+    d_id:{
+        type:String,
+        require:true
+    },
+    d_name:{
+        type:String,
+        require:false
+    },
+
+    d_telephone:{
+        type:String,
+        require:true
+    },
+    d_specialty:{
+        type:String,
+        require:true
+    },
+    d_ps:{
+        type:String,
+        require:true
+    }
+});
+
+const drugSchema=new schema({
+    id:{
+        type:String,
+        require:true
+    },
+    name:{
+        type:String,
+        require:false
+    },
+
+    type:{
+        type:String,
+        require:true
+    },
+    price:{
+        type:String,
+        require:true
+    },
+    prescribed_for:[String]
+});
+
+const treatmentSchema=new schema({
+    id:{
+        type:String,
+        require:true
+    },
+    condition_name:{
+        type:String,
+        require:false
+    },
+
+    treatment:{
+        type:String,
+        require:true
+    },
+    price:{
+        type:String,
+        require:true
+    }
+});
+
+const diagnosticSchema = new schema({
+    diag_id:{
+      type:String,
+      required:true
+    },
+    p_id:{
+        type:String,
+        required:true
+    },
+    d_id:{
+        type:String,
+        required:true
+    },
+    diagnostic:{
+        type:String,
+        required:true
+    },
+    treatment:{
+        type:String,
+        required:true
+    }
+
+});
+
 
  mongoose.model('Ward',WardSchema);
  mongoose.model('Doctor',DoctorSchema);
@@ -168,6 +257,10 @@ const AttendantSchema = new schema({
  mongoose.model('Materials',MaterialSchema);
  mongoose.model('Nurse', NurseSchema);
  mongoose.model('Attendant', AttendantSchema);
+ mongoose.model('EmergencyList',emergencyListSchema);
+ mongoose.model('Drug',drugSchema);
+ mongoose.model('Treatment',treatmentSchema);
+ mongoose.model('Diagnostic',diagnosticSchema);
 
 
  mongoose.connect('mongodb://localhost:27017/WardManagement',function(err){

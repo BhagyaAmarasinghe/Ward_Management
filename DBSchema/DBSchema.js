@@ -68,6 +68,8 @@ const PatientSchema=new Schema({
     }
 });
 
+
+
 mongoose.model('UserDetails',UserSchema);
 mongoose.model('PatientDetails',PatientSchema);
 

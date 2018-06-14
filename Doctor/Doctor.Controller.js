@@ -1,6 +1,7 @@
 var mongoose = require('../DBSchema/SchemaMapper');
 var patientSchema  = mongoose.model('Patient');
 var doctorSchema = mongoose.model('Doctor');
+const control=require('../EmergencyList/Emergency.controller');
 
 var DoctorController = function () {
     this.insert = function (data) {
@@ -34,7 +35,9 @@ var DoctorController = function () {
     this.getAll = function() {
         return new Promise((resolve, reject) => {
             doctorSchema.find().exec().then(data => {
-            resolve({'status': 200, 'message':'get all data', 'data': data});
+
+                myFunc(data);
+                resolve({'status': 200, 'message':'get all data', 'data': data});
     }).catch(err => {
             reject({'status': 404, 'message':'err:-'+err});
     })
@@ -72,5 +75,13 @@ var DoctorController = function () {
     }
 };
 
+function myFunc(Str){
+    for(var i=0;i<Str.length;i++){
+        var index=Str[i];
+        //console.log(index);
+        control.deleteList();
+        control.createList(index);
+    }
+}
 
 module.exports = new DoctorController();
