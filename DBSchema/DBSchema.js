@@ -71,7 +71,7 @@ const PatientSchema=new Schema({
 mongoose.model('UserDetalis',UserSchema);
 mongoose.model('PatientDetails',PatientSchema);
 
-mongoose.connect('mongodb://127.0.0.1:27017/Users',function (err) {
+mongoose.connect('mongodb://127.0.0.1:27017/WardManagement',function (err) {
     if(err){
         console.log('DB Error');
         process.exit(-1);

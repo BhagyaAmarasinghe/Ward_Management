@@ -100,7 +100,7 @@ const DoctorSchema = new schema({
      }
  });
 
-const NurseSchema = new Schema({
+const NurseSchema = new schema({
     name: {
         type: String,
         require: true
@@ -127,7 +127,7 @@ const NurseSchema = new Schema({
     }
 });
 
-const AttendantSchema = new Schema({
+const AttendantSchema = new schema({
     name: {
         type: String,
         require: true
@@ -137,7 +137,7 @@ const AttendantSchema = new Schema({
         require: true
     },
     age: {
-        type: int,
+        type: String,
         require: true
     },
     address: {
