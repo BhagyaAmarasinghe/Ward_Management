@@ -4,7 +4,8 @@ const Schema=mongoose.Schema;
 const UserSchema=new Schema({
     UserName:{
         type:String,
-        require:true
+        require:true,
+        unique:true
     },
     password:{
         type:String,
@@ -16,7 +17,8 @@ const UserSchema=new Schema({
 const PatientSchema=new Schema({
     PID:{
         type:String,
-        require:true
+        require:true,
+        unique:true
     },
     Pname:{
         type:String,

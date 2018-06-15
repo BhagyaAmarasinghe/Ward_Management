@@ -6,7 +6,8 @@ const schema =   mongoose.Schema;
 const DoctorSchema = new schema({
     d_id : {
         type:String,
-        require:true
+        require:true,
+        unique:true
     },
     d_name:{
         type:String,
@@ -54,7 +55,8 @@ const DoctorSchema = new schema({
  const MachineSchema = new schema({
      m_id:{
          type:String,
-         require:true
+         require:true,
+         unique:true
      },
      m_name:{
          type:String,
@@ -69,7 +71,8 @@ const DoctorSchema = new schema({
  const WardSchema = new schema({
      w_id:{
          type:String,
-         require:true
+         require:true,
+         unique:true
      },
      w_name:{
          type:String,
@@ -84,7 +87,8 @@ const DoctorSchema = new schema({
  const MaterialSchema = new schema({
      mat_id:{
          type:String,
-         require:true
+         require:true,
+         unique:true
      },
      mat_name:{
          type:String,
@@ -103,7 +107,8 @@ const DoctorSchema = new schema({
 const NurseSchema = new schema({
     nur_id: {
         type: String,
-        require: true
+        require: true,
+        unique:true
     },
 
     nur_name: {
@@ -135,7 +140,8 @@ const NurseSchema = new schema({
 const AttendantSchema = new schema({
     att_id: {
         type: String,
-        require: true
+        require: true,
+        unique:true
     },
 
     att_name: {
@@ -163,7 +169,8 @@ const AttendantSchema = new schema({
 const emergencyListSchema=new schema({
     d_id:{
         type:String,
-        require:true
+        require:true,
+        unique:true
     },
     d_name:{
         type:String,
@@ -187,7 +194,8 @@ const emergencyListSchema=new schema({
 const drugSchema=new schema({
     id:{
         type:String,
-        require:true
+        require:true,
+        unique:true
     },
     name:{
         type:String,
@@ -208,7 +216,8 @@ const drugSchema=new schema({
 const treatmentSchema=new schema({
     id:{
         type:String,
-        require:true
+        require:true,
+        unique:true
     },
     condition_name:{
         type:String,
@@ -228,7 +237,8 @@ const treatmentSchema=new schema({
 const diagnosticSchema = new schema({
     diag_id:{
       type:String,
-      required:true
+      required:true,
+        unique:true
     },
     p_id:{
         type:String,
