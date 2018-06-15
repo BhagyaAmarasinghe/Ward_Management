@@ -27,8 +27,8 @@ router.get('/',function (req,res) {
 
 });
 
-router.get('/:id',function (req, res) {
-    controller.getOneTreatment(req.params.id).then(function (data) {
+router.get('/:treatment',function (req, res) {
+    controller.getOneTreatment(req.params.treatment).then(function (data) {
         res.status(data.status).send({data:data.data});
     }).catch(function (err) {
         res.status(err.status).send({message:err.message});

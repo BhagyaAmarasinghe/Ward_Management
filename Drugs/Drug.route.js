@@ -27,8 +27,8 @@ router.get('/',function (req,res) {
 
 });
 
-router.get('/:id',function (req, res) {
-    controller.getOneDrug(req.params.id).then(function (data) {
+router.get('/:name',function (req, res) {
+    controller.getOneDrug(req.params.name).then(function (data) {
         res.status(data.status).send({data:data.data});
     }).catch(function (err) {
         res.status(err.status).send({message:err.message});

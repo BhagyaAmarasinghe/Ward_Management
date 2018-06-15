@@ -41,9 +41,9 @@ Controller = function () {
 
     };
 
-    this.getOneTreatment = function (id) {
+    this.getOneTreatment = function (treatment) {
         return new Promise(function (resolve, reject) {
-            treatmentSchema.find({id: id}).exec().then(function (User) {
+            treatmentSchema.find({treatment:treatment}).exec().then(function (User) {
                 resolve({status: 200, data:User});
 
             }).catch(function (err) {
