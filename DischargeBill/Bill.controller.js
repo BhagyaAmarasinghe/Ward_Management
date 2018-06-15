@@ -1,26 +1,33 @@
 const mongoose=require("../DBSchema/SchemaMapper");
-var treatmentSchema=mongoose.model('Treatment');
+var billSchema=mongoose.model('Bill');
 
 var Controller;
 Controller = function () {
-    this.insertTreatment = function (data) {
+    this.createBill = function (data) {
         return new Promise(function (resolve, reject) {
-            var Treatment = new treatmentSchema({
-                id: data.id,
-                condition_name: data.condition_name,
-                treatment: data.treatment,
-                price:data.price,
+            var bill = new billSchema({
+                bill_id: data.bill_id,
+                p_id: data.p_id,
+                p_name: data.p_name,
+                reg_date:data.reg_date,
+                bill_date:data.bill_date,
+                drugs: data.drugs,
+                tests: data.tests,
+                treatments:data.treatments,
+                other:data.other,
+                tot:data.tot
 
             });
-            Treatment.save().then(function () {
+            debugger;
+            bill.save().then(function () {
                 resolve({
                     status: 200,
-                    message: "Treatment inserted successfully"
+                    message: "Bill created successfully"
                 });
             }).catch(function (err) {
                 reject({
                     status: 500,
-                    message: "Error inserting the Treatment"
+                    message: "Error creating the bill"
                 });
 
             })
@@ -28,9 +35,9 @@ Controller = function () {
     };
 
 
-    this.getAllTreatments = function () {
+    this.getAllBills = function () {
         return new Promise(function (resolve, reject) {
-            treatmentSchema.find().exec().then(function (data) {
+            billSchema.find().exec().then(function (data) {
 
                 resolve({status: 200, data: data});
 
@@ -41,9 +48,9 @@ Controller = function () {
 
     };
 
-    this.getOneTreatment = function (treatment) {
+    this.getBill = function (id) {
         return new Promise(function (resolve, reject) {
-            treatmentSchema.find({treatment:treatment}).exec().then(function (User) {
+            billSchema.find({bill_id: id}).exec().then(function (User) {
                 resolve({status: 200, data:User});
 
             }).catch(function (err) {
@@ -53,19 +60,19 @@ Controller = function () {
 
     };
 
-    this.deleteTreatment=function(id){
+    /*this.deleteBill=function(id){
         return new Promise(function(resolve,reject){
-            treatmentSchema.remove({id:id}).exec().then(function(){
-                resolve({status:200,message:'Treatment deleted'});
+            billSchema.remove({bill_id:id}).exec().then(function(){
+                resolve({status:200,message:'Drug successfully deleted'});
             }).catch(function (err) {
-                reject({status:500,message:'Error deleting the treatment'});
+                reject({status:500,message:'Error deleting the drug'});
             })
         })
-    };
+    };*/
 
-    this.updateTreatment=function(id,data){
+    this.updateBill=function(id,data){
         return new Promise(function (resolve,reject) {
-            treatmentSchema.update({id:id},data).exec().then(function () {
+            billSchema.update({bill_id:id},data).exec().then(function () {
                 resolve({
                     status:200,
                     message:"Updated"
@@ -81,7 +88,4 @@ Controller = function () {
 
 };
 
-
-
 module.exports=new Controller();
-

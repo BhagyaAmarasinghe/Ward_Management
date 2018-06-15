@@ -1,6 +1,6 @@
 var express= require('express');
 var router=express.Router();
-var controller=require('./Drug.controller');
+var controller=require('./Bill.controller');
 
 router.use(function(req,res,next){
     res.setHeader('Access-Control-Allow-Origin','*' );
@@ -10,7 +10,7 @@ router.use(function(req,res,next){
 });
 
 router.post('/',function (req,res) {
-    controller.insertDrug(req.body).then(function (data) {
+    controller.createBill(req.body).then(function (data) {
         res.status(data.status).send({message:data.message});
     }).catch(function (err) {
         res.status(err.status).send({message:err.message});
@@ -18,39 +18,40 @@ router.post('/',function (req,res) {
 
 });
 
-router.get('/',function (req,res) {
-    controller.getAllDrugs().then(function (data) {
-        res.status(data.status).send({data:data.data});
-    }).catch(function (err) {
-        res.status(err.status).send({message:err.message});
-    })
 
-});
 
-router.get('/:name',function (req, res) {
-    controller.getOneDrug(req.params.name).then(function (data) {
+router.get('/',function (req, res) {
+    controller.getAllBills(req.params.bill_id).then(function (data) {
         res.status(data.status).send({data:data.data});
     }).catch(function (err) {
         res.status(err.status).send({message:err.message});
     })
 });
 
-router.delete('/:id',function(req,res){
-    controller.deleteDrug(req.params.id).then(function(data){
+router.get('/:bill_id',function (req, res) {
+    controller.getBill(req.params.bill_id).then(function (data) {
+        res.status(data.status).send({data:data.data});
+    }).catch(function (err) {
+        res.status(err.status).send({message:err.message});
+    })
+});
+
+/*router.delete('/:bill_id',function(req,res){
+    controller.deleteBill(req.params.id).then(function(data){
         res.status(data.status).send({data:data.message});
     }).catch(function(err){
         res.status(err.status).send({message:err.message});
     })
-});
+});*/
 
-router.put('/:id',function(req,res){
-    controller.updateDrug(req.params.id,req.body).then(function (data) {
+router.put('/:bill_id',function(req,res){
+    controller.updateBill(req.params.bill_id,req.body).then(function (data) {
         res.status(data.status).send({message:data.message});
 
     }).catch(function (err) {
         res.status(err.status).send({message:data.message})
     });
-})
+});
 
 
 
