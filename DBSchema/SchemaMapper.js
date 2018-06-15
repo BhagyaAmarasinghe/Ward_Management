@@ -308,6 +308,23 @@ const billSchema=new schema({
 });
 
 
+const testSchema = new schema({
+    t_id:{
+        type:String,
+        require:true
+    },
+    t_name:{
+        type:String,
+        require:true
+    },
+    t_price:{
+        type:Number,
+        require:true
+    }
+
+});
+
+
  mongoose.model('Ward',WardSchema);
  mongoose.model('Doctor',DoctorSchema);
  mongoose.model('Patient',PatientSchema);
@@ -320,6 +337,7 @@ const billSchema=new schema({
  mongoose.model('Treatment',treatmentSchema);
  mongoose.model('Diagnostic',diagnosticSchema);
  mongoose.model('Bill',billSchema);
+ mongoose.model('Test',testSchema);
 
 
  mongoose.connect('mongodb://localhost:27017/WardManagement',function(err){

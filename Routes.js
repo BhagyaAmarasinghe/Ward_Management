@@ -9,7 +9,7 @@ var MaterialRouter = require('./Materials/Materials.Router');
 
 var NurseRouter = require('./Nurse/Nurse.Router');
 var AttendantRouter = require('./Attendant/Attendant.Router');
-
+var testRouter = require('./Tests/Tests.Router');
 
 
 //sachitha
@@ -32,6 +32,7 @@ Routes.use('/Diagnosis/',diagnosisRoute);
 
 Routes.use('/Nurse/', NurseRouter);
 Routes.use('/Attendant/', AttendantRouter);
+Routes.use('/Tests/',testRouter);
 
 
 
