@@ -259,6 +259,54 @@ const diagnosticSchema = new schema({
 
 });
 
+const billSchema=new schema({
+    bill_id:{
+        type:String,
+        require:true,
+        unique:true
+
+    },
+    p_id:{
+        type:String,
+        require:true
+    },
+
+    p_name:{
+        type:String,
+        require:true
+    },
+    reg_date:{
+        type:String,
+        require:true
+    },
+    bill_date:{
+        type:String,
+        require:true,
+
+    },
+    drugs:{
+        type:String,
+        require:false
+    },
+
+    tests:{
+        type:String,
+        require:false
+    },
+    treatments:{
+        type:String,
+        require:false
+    },
+    other:{
+        type:String,
+        require:false
+    },
+    tot:{
+        type:String,
+        require:true
+    }
+});
+
 
  mongoose.model('Ward',WardSchema);
  mongoose.model('Doctor',DoctorSchema);
@@ -271,6 +319,7 @@ const diagnosticSchema = new schema({
  mongoose.model('Drug',drugSchema);
  mongoose.model('Treatment',treatmentSchema);
  mongoose.model('Diagnostic',diagnosticSchema);
+ mongoose.model('Bill',billSchema);
 
 
  mongoose.connect('mongodb://localhost:27017/WardManagement',function(err){

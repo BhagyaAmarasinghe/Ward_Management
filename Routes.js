@@ -11,6 +11,7 @@ var NurseRouter = require('./Nurse/Nurse.Router');
 var AttendantRouter = require('./Attendant/Attendant.Router');
 
 
+
 //sachitha
 var UserRouter=require('./Users/User.router');
 var PatientRouter=require('./Patients/Patient.router');
@@ -18,6 +19,7 @@ var PatientRouter=require('./Patients/Patient.router');
 var emergencyRoute=require('./EmergencyList/Emergency.route');
 var drugRoute=require('./Drugs/Drug.route');
 var treatmentRoute=require('./Treatments/Treatment.route');
+var billRoute=require('./DischargeBill/Bill.route');
 
 //shihan
 var diagnosisRoute = require('./Diagnostics/Diagnostics.router');
@@ -40,6 +42,8 @@ Routes.use('/PatientDetails/',PatientRouter);
 Routes.use('/List/',emergencyRoute);
 Routes.use('/Treatments/',treatmentRoute);
 Routes.use('/Drugs/',drugRoute);
+Routes.use('/Bill/',billRoute);
+
 
 
 module.exports = Routes;
