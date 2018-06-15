@@ -17,6 +17,7 @@ var Patientcontroller=function () {
                 PatientStatus:data.PatientStatus,
                 Treatments:data.Treatments,
                 Tests:data.Tests,
+                Doctor:data.Doctor,
                 Drugs:data.Drugs,
                 Date:data.Date
             })

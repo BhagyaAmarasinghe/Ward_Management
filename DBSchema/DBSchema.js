@@ -68,6 +68,10 @@ const PatientSchema=new Schema({
         type:String,
         require:true
     },
+    Doctor:{
+        type:String,
+        require:true
+    },
     Date:{
         type:Date,
         require:true
